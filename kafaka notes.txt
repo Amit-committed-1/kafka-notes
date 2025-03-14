@@ -24,9 +24,9 @@ Step 2: Udupi Hotel Accepts the Orders
 
 Udupi Hotel ---> [Kafka: order_status_topic] ---> 10 Customers
 🔹 Summary of the Pub/Sub Model
-Step	Producer	Kafka Topic	Consumer	Purpose
-Customer places order	Customer App	order_topic	Udupi Hotel App	Order received at restaurant
-Udupi Hotel accepts order	Udupi Hotel App	order_status_topic	Customer App	Order confirmation notification
+Step	                        Producer	     Kafka Topic	           Consumer	                        Purpose
+Customer  places order	        Customer App	     order_topic	        Udupi Hotel App	           Order received at restaurant
+Udupi Hotel accepts order	Udupi Hotel App	    order_status_topic	         Customer App	           Order confirmation notification
 
 🔹 When to Store in Database?
 ✔️ YES – When the customer places an order → Store in DB (orders table).
